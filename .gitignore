@@ -16,7 +16,7 @@ package-lock.json
 
 # production
 /build
-/public/script.js
+/public/asdasdasd.js
 /geo
 /dist
 /generated

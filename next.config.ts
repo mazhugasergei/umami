@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import pkg from './package.json' with { type: 'json' };
 
-const TRACKER_SCRIPT = '/script.js';
+const TRACKER_SCRIPT = '/asdasdasd.js';
 
 const basePath = process.env.BASE_PATH || '';
 const cloudMode = process.env.CLOUD_MODE || '';
@@ -157,8 +157,8 @@ if (trackerScriptName) {
 
 if (cloudMode) {
   rewrites.push({
-    source: '/script.js',
-    destination: 'https://cloud.umami.is/script.js',
+    source: '/asdasdasd.js',
+    destination: 'https://cloud.umami.is/asdasdasd.js',
   });
 }
 

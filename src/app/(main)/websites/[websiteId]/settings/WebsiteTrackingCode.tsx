@@ -1,7 +1,7 @@
 import { Column, Label, Text, TextField } from '@umami/react-zen';
 import { useConfig, useMessages } from '@/components/hooks';
 
-const SCRIPT_NAME = 'script.js';
+const SCRIPT_NAME = 'asdasdasd.js';
 
 export function WebsiteTrackingCode({
   websiteId,
@@ -21,9 +21,7 @@ export function WebsiteTrackingCode({
       return `${process.env.cloudUrl}/${trackerScriptName}`;
     }
 
-    return `${hostUrl || window?.location?.origin || ''}${
-      process.env.basePath || ''
-    }/${trackerScriptName}`;
+    return `${hostUrl || window?.location?.origin || ''}${process.env.basePath || ''}/${trackerScriptName}`;
   };
 
   const url = trackerScriptName?.startsWith('http') ? trackerScriptName : getUrl();

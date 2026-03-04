@@ -113,7 +113,7 @@ export function TestConsolePage({ websiteId }: { websiteId: string }) {
         <Script
           async
           data-website-id={websiteId}
-          src={`${process.env.basePath || ''}/script.js`}
+          src={`${process.env.basePath || ''}/asdasdasd.js`}
           data-cache="true"
         />
         <Panel>
